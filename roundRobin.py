@@ -12,3 +12,9 @@ class RoundRobinLoadBalancer:
         server = self.servers[self.index]
         self.index = (self.index + 1) % len(self.servers)
         return server
+    
+# Example Usage
+servers = ["Server1", "Server2", "Server3"]
+lb = RoundRobinLoadBalancer(servers)
+for _ in range(6):
+    print(f"Request handled by: {lb.get_server()}")    
