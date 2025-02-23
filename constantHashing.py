@@ -35,4 +35,11 @@ class ConsistentHashing:
             if hash_key <= node_key:
                 return self.ring[node_key]
         return self.ring[self.sorted_keys[0]]
+
+# Example Usage
+nodes = ["NodeA", "NodeB", "NodeC"]
+ch = ConsistentHashing(nodes)
+keys = ["User1", "User2", "User3", "User4"]
+for key in keys:
+    print(f"{key} is mapped to {ch.get_node(key)}")   
     
