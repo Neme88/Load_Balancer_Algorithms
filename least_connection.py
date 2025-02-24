@@ -1,3 +1,8 @@
+# ADVANCED LOAD BALANCING ALGORITHMS
+
+# 1. LEAST CONNECTIONS ALGORITHM
+# Assigns requests to the server with the fewest active connections.
+
 class LeastConnectionsLoadBalancer:
     def __init__(self, servers):
         self.servers = {server: 0 for server in servers}  # Track active connections
