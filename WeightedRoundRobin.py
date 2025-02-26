@@ -1,3 +1,5 @@
+# WEIGHTED ROUND ROBIN
+# Distributes requests based on server capacity using weights.
 class WeightedRoundRobinLoadBalancer:
     def __init__(self, server_weights):
         self.servers = []
