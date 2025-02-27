@@ -1,5 +1,6 @@
+# IP HASHING LOAD BALANCER
+# Maps clients to servers consistently based on their IP address.
 import hashlib
-
 class IPHashingLoadBalancer:
     def __init__(self, servers):
         self.servers = servers
